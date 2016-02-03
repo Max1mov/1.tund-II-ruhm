@@ -3,7 +3,14 @@
 
    var clock = document.getElementById('clock');
 
-   writeDate();
+   writeDate(); // selleks, et ei oleks näha 0:0:0
+
+   // käivitan intervalli | 500ms = 0.5s
+   window.setInterval(function(){
+     // iga 500ms tagant käivitan writeDate'i
+     writeDate();
+
+   }, 500);
 
  };
 
