@@ -12,6 +12,21 @@
 
    }, 500);
 
+
+   clock.addEventListener('click', function(event){
+     console.log(event.x);
+   });
+
+   window.addEventListener('keyup', function(event){
+     console.log(event.which);
+     if(event.which == 13){
+
+       console.log('vajutasid enterit');
+     }
+   });
+
+
+
  };
 
 //võtab aja ja kirjutab #clock elemendi sisse
