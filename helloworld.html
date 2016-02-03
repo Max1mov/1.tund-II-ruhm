@@ -24,6 +24,11 @@
       last_name = document.getElementById('last-name').value;
 
       console.log(first_name + ' ' + last_name);
+
+      //kirjutame html elemendi sisse
+      document.getElementById('output').innerHTML =
+      '<strong>Tere </strong>' + first_name + ' ' + last_name;
+
     }
 
   </script>
